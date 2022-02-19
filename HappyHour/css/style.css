@@ -1,0 +1,31 @@
+
+body {
+	background: #000000; /* hexadecimal number */
+	color: rgb(118, 38, 199);
+	padding: 15px;
+	font-size: 30px;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+img {
+	padding: 5%;
+	width: 15%;
+	height: 30%;
+}
+
+#movieimg {
+	width: 10%;
+	height: 20%;
+
+}
+
+strong {
+	color: rgb(191, 143, 255);
+}
+
+input{
+	background-color: rgb(94, 23, 160);
+	color: aliceblue;
+	font-weight: bold;
+}

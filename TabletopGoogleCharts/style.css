@@ -1,0 +1,10 @@
+body {
+    background-color: white;
+}
+
+#table_div {
+    width: 1280px;
+    height: 720px;
+
+    margin: auto;
+}

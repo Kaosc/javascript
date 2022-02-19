@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Happy Hour App - How about a drink!?">
+		<meta name="keywords" content="happy hour, drink, beers">
+
+		<title>Happy Hour</title>
+		
+		<!-- <link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css"> -->
+		<link rel="stylesheet" href="css/style.css">	
+		<script>
+
+			let movieImg = [
+				'https://m.media-amazon.com/images/M/MV5BODhmN2Q4ZjUtNzE5Ni00YWQxLThmYjYtM2NkNDEwNmFhMGY3XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UY209_CR0,0,140,209_AL_.jpg',
+				'https://m.media-amazon.com/images/M/MV5BOWYyNjA5MmQtNjRiOC00OTgzLTk1ZjEtZDE0N2YyYjI5YTUxXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY209_CR0,0,140,209_AL_.jpg',
+				'https://m.media-amazon.com/images/M/MV5BNzg4YzgwN2UtNjc3MS00Yzc5LTlmODEtYTRhYzZkZDUwZGY5XkEyXkFqcGdeQXVyMjgyNjk3MzE@._V1_UY209_CR0,0,140,209_AL_.jpg',
+				'https://m.media-amazon.com/images/M/MV5BMWZkNzNlMzMtMjM5ZS00MWYzLWFmMmUtMjE1ODM3NjBlODA5XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UY209_CR0,0,140,209_AL_.jpg',
+				'https://m.media-amazon.com/images/M/MV5BOWRkOTYzZTQtMzQwNi00NDYwLTk4NjUtN2FjYTI4Y2UzM2RjXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UY209_CR0,0,140,209_AL_.jpg',
+				'https://m.media-amazon.com/images/M/MV5BYWQ2NzQ1NjktMzNkNS00MGY1LTgwMmMtYTllYTI5YzNmMmE0XkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_UY209_CR0,0,140,209_AL_.jpg',
+				'https://m.media-amazon.com/images/M/MV5BOGIzOTZiZjItNTMyYS00ODcyLWE2ZDUtYWNjZDNmNTUxYjVkXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UY209_CR0,0,140,209_AL_.jpg',
+				'https://m.media-amazon.com/images/M/MV5BZGRjYjNmYmQtZTI4NS00ZGQwLTg1YzQtMzJkOWJmYTNkODJmXkEyXkFqcGdeQXVyNTA3MTU2MjE@._V1_UY209_CR0,0,140,209_AL_.jpg',
+				'https://m.media-amazon.com/images/M/MV5BNTkwOTE1ZDYtODQ3Yy00YTYwLTg0YWQtYmVkNmFjNGZlYmRiXkEyXkFqcGdeQXVyNTc4MjczMTM@._V1_UY209_CR0,0,140,209_AL_.jpg',
+				'https://m.media-amazon.com/images/M/MV5BODNiODVmYjItM2MyMC00ZWQyLTgyMGYtNzJjMmVmZTY2OTJjXkEyXkFqcGdeQXVyNzk3NDUzNTc@._V1_UY209_CR0,0,140,209_AL_.jpg',
+				'https://m.media-amazon.com/images/M/MV5BMDQ0MWEzMDEtMGZmNC00NjQ0LWJlNDItZDMyNDc5MmFkODJjXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_UY209_CR0,0,140,209_AL_.jpg'
+			]
+
+			let musicImg = [
+				'https://i.pinimg.com/564x/81/40/1e/81401e903133ed282b5bdc98d5d86c9b.jpg',
+				'https://i.pinimg.com/564x/81/40/1e/81401e903133ed282b5bdc98d5d86c9b.jpg',
+				'https://images.genius.com/974582d77eb74d5d784bdfd08020b390.1000x1000x1.jpg',
+				'https://images.genius.com/53e123179e62b40772bcb7c5cf8e223f.1000x1000x1.jpg',
+				'https://t2.genius.com/unsafe/225x225/https%3A%2F%2Fimages.genius.com%2F73d67d1fa8684006e883f449f9790e34.700x700x1.jpg',
+				'https://t2.genius.com/unsafe/225x226/https%3A%2F%2Fimages.genius.com%2Fa6d8cd7971cf7a269e9d0c2a7e452b20.673x676x1.png',
+				'https://t2.genius.com/unsafe/225x225/https%3A%2F%2Fimages.genius.com%2Fc88eef91a13af7384c1b81a2471d0513.1000x1000x1.jpg',
+				'https://t2.genius.com/unsafe/225x225/https%3A%2F%2Fimages.genius.com%2Fb7df330614391d003e52fbd80fa21ac3.500x500x1.jpg',
+				'https://t2.genius.com/unsafe/225x225/https%3A%2F%2Fimages.genius.com%2F564f40f0f155de5346eb4a1aad425c0c.1000x1000x1.png',
+				'https://t2.genius.com/unsafe/225x225/https%3A%2F%2Fimages.genius.com%2F41e0d1bbc838b0ea401a6e8dc81e1a11.1000x1000x1.jpg',
+				'https://t2.genius.com/unsafe/225x225/https%3A%2F%2Fimages.genius.com%2F3d4d6148963fab228213c4fc3f9a243b.770x770x1.png'
+			]
+
+			let movie = [
+				'Sex Education',
+				'Most Dangerous Game',
+				'A Street Cat Named Bob',
+				'The King',
+				'The Conjuring 3',
+				'No Time to Die',
+				'Sweet Girl',
+				'Hawkeye',
+				'Loki',
+				'The Falcon and the Winter Soldier',
+				'Blood Red Sky'
+			];
+
+			let music = [
+				'CLOUDS',
+				'JUST LIKE YOU',
+				'PAID MY DUES',
+				'Love Is Blindless',
+				'Acid Radin',
+				'Summer Nights',
+				'Boss Bitch',
+				'I See Red',
+				'No Time to Die',
+				'Bounce Man',
+				'Lane Boy'
+			];
+
+			function refresh(){
+       			window.location.reload("Refresh")
+     		}
+
+			const movieRandomNumber= Math.floor(Math.random()*movie.length);
+			const musicRandomNumber = Math.floor(Math.random()*music.length);
+			const name = "mayt!";
+			const movieName = movie[movieRandomNumber];
+			const musicName = music[musicRandomNumber];
+
+			document.write("Hey <strong>" + name + "</strong><br><br>")
+			document.write("How about you watch <strong>" + movieName + "</strong> and listen <strong>" + musicName + "</strong> for tonight?");
+			document.write("<br><img alt='movie' id='movieimg' src=" + movieImg[movieRandomNumber] + ">")
+			document.write("<img alt='movie' src=" + musicImg[musicRandomNumber] + " alt='song' >")
+			 
+		</script>
+	</head>
+	<body>
+		<p><input type="button" value="Refresh" onClick="refresh(this)"></p>
+	</body>
+</html>
