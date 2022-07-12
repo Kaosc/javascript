@@ -1,0 +1,347 @@
+/*
+ * General/Utility Styles
+*/
+
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+body {
+  margin: 0;
+  background: rgb(245, 245, 245);
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 0.875rem;
+  color: rgb(86, 90, 92);
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  font-weight: bold;
+  color: rgb(255, 89, 95);
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 600;
+}
+
+
+/*
+ * Button styles
+*/
+
+.button {
+  background: rgb(255, 89, 95);
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.75rem 5rem;
+  border-bottom: 1px solid rgb(227, 25, 29);
+  border-radius: 2px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+/*
+ * Logo Styles
+*/
+
+h1 {
+  font-size: 22px;
+  color: #666A6C;
+}
+
+/*
+ * Logo Styles
+*/
+
+#logo {
+border-right: 1px solid #DCE0E0;
+}
+
+/*
+ * Banner Image Styles
+*/
+
+#banner img {
+  width: 100%;
+}
+
+/*
+ * Info Section
+*/
+
+.info {
+  background: white;
+  text-align: center;
+  padding: 25px;
+}
+
+.info h1 {
+  margin-bottom: 5px;
+}
+
+.info .profile {
+  margin-bottom: 24px;
+}
+
+.info .owner-details img {
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+  margin-bottom: 6px;
+}
+
+.info h2.relationship , .info h2.name {
+  color: #909597;
+  margin-bottom: 3px;
+}
+
+.info h2.name {
+  font-weight: bold;
+}
+
+.info p.location {
+  margin-bottom: 20px;
+}
+
+.info .icon {
+  float: left;
+  width: 33.3%;
+}
+
+.info .icon img {
+  height: 30px;
+  margin-bottom: 3px;
+}
+
+.info .booking h2 {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 13px;
+}
+
+.info h2.price time {
+  font-size: 16px;
+}
+
+/*
+ * DogInfo Section
+*/
+
+/*
+ *  About
+*/
+.doginfo .about {
+	border-bottom: 1px solid rgb(204, 204, 204);
+	padding-bottom: 28px;
+}
+
+.doginfo .about header {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin: 60px auto 40px;
+}
+
+.doginfo .about .about-paragraph {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #565A5C;
+  padding: 0 25px;
+}
+
+.doginfo .about .about-contact {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 36px;
+  text-align: center;
+}
+
+
+/*
+ *  Care
+*/
+
+.care {
+  border-bottom: 1px solid rgb(204, 204, 204);
+  padding-bottom: 28px;
+  margin: 0 8px;
+}
+
+.care header {
+  margin: 15px 0 10px 13px;
+  font-size: 16px;
+}
+
+.care p {
+  line-height: normal;
+  font-size: 16px;
+}
+
+.care time, .care strong {
+  font-weight: bold;
+}
+
+.care .care-column {
+  margin-left: 13px;
+}
+
+/*
+ *  Games
+*/
+
+.games {
+  border-bottom: 1px solid rgb(204, 204, 204);
+  padding-bottom: 28px;
+  margin: 0 8px;
+}
+
+.games span {
+  margin-left: 13px;
+}
+
+.games header {
+  margin: 15px 0 10px 13px;
+  font-size: 16px;
+}
+
+.games li {
+  padding: 3px;
+}
+
+.games ul {
+  padding: 3px;
+  padding-top: 14px;
+}
+
+/*
+ *  Photos
+*/
+
+.doginfo .photos img {
+  margin: 28px auto;
+  display: block;
+  width: 80%;
+
+}
+
+@media only screen and (min-width: 1060px) {
+
+/*
+ * Info Section
+*/
+
+  .container {
+    width: 1040px;
+    margin: 0 auto;
+  }
+
+  .column {
+    float: left;
+  }
+
+  .info .profile {
+    width: 660px;
+    border-right: 1px solid #DCE0E0;
+  }
+
+
+  .info .booking {
+    width: 380px;
+  }
+
+  .info .owner-details {
+    width: 20%;
+  }
+
+  .info .pet-details {
+    width: 80%;
+    text-align: left;
+  }
+
+  .info .icon {
+    width: inherit;
+    margin-right: 50px;
+  }
+
+  .info .icon img {
+    display: block;
+    margin: 3px auto 3px;
+  }
+  
+/*
+ * DogInfo Section
+*/
+
+	.doginfo .main {
+		width: 660px;
+	}
+
+  .doginfo .about .about-paragraph {
+    padding: 0px;
+  }
+
+  .doginfo .about .about-contact {
+    text-align: left;
+  }
+
+  .doginfo .care {
+    margin: 0px;
+  }
+
+  .doginfo .care header {
+    margin-left: 0px;
+    margin-top: 28px;
+    display: inline;
+    float: left;
+  }
+
+	.doginfo .care-column {
+		float: left;
+		margin-top: 28px;
+		padding-left: 40px;
+	}
+
+  .doginfo .games {
+    padding: 10px;
+  }
+
+  .doginfo .games {
+    margin: 0;
+    padding: 14px 0 14px 0;
+  }
+  
+  .doginfo .games header {
+    margin: 15px 0 0 0;
+    font-size: 16px;
+  }
+  
+  .doginfo .games .game-column {
+    float: left;
+  }
+
+  .doginfo li {
+    padding-left: 30px;
+  }
+  
+  .doginfo .photos {
+    text-align: center;
+    display: inline;
+  }
+
+  .doginfo .photos img {
+    display: inline;
+    width: 200px;
+    margin: 28px 8px;
+  }
+  
+}
