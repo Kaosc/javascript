@@ -1,0 +1,54 @@
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+   background-color: #101010;
+}
+
+.layout {
+   margin-top: 1.5rem;
+   display: grid;
+   gap: 30px;
+}
+
+/* CSS */
+.button {
+   align-items: center;
+   background: #2c2c2c;
+   border: 0;
+   border-radius: 8px;
+   box-shadow: -10px -10px 30px 0 #1d1d1d, 10px 10px 30px 0 #1d1d1d;
+   box-sizing: border-box;
+   color: #cacaca;
+   cursor: pointer;
+   display: flex;
+   font-family: "Cascadia Code", Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+   font-size: 1.3rem;
+   justify-content: center;
+   line-height: 1.5rem;
+   padding: 15px;
+   position: relative;
+   text-align: left;
+   transition: .2s;
+   user-select: none;
+   -webkit-user-select: none;
+   touch-action: manipulation;
+   white-space: pre;
+   width: 100%;
+   word-break: normal;
+   word-spacing: normal;
+   text-decoration: none;
+}
+
+.button:hover {
+   background: #3b3b3b;
+   box-shadow: -15px -15px 30px 0 #141414, 15px 15px 30px 0 #141414;
+}
+
+@media (min-width: 768px) {
+   .button {
+      padding: 24px;
+   }
+}
