@@ -2,7 +2,7 @@ const BASE_URL = "https://kaosc.github.io/javascript-projects/"
 
 const urls = [
 	"AirCnC",
-	"AirCnc Dashboard",
+	"AirCnC Dashboard",
 	"Black Jack Game",
 	"Chrome Extention",
 	"GIF TV",
