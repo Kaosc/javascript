@@ -8,7 +8,6 @@ const urls = [
 	"GIF TV",
 	"Giphy Search Engine",
 	"Happy Hour",
-	"Sound Cloud Player",
 	"Passanger Count App",
 	"Sound Cloud Player",
 	"Tabletop Google Charts",
