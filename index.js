@@ -1,4 +1,4 @@
-const BASE_URL = "https://kaosc.github.io/javascript-projects/"
+const BASE_URL = "https://kaosc.github.io/javascript/"
 
 const urls = [
 	"AirCnC",
